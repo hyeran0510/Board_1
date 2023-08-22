@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>게시물 작성폼</title>
+</head>
+
+<style>
+
+    .layout {
+        width : 500px;
+        margin : 0 auto;
+        margin-top : 40px;
+    }
+
+    .layout input {
+        width : 100%;
+        box-sizing : border-box
+    }
+
+    .layout textarea {
+        width : 100%;
+        margin-top : 10px;
+        min-height : 300px;
+    }
+
+</style>
+
+<body>
+<div class="layout">
+  <form action="/board/writepro" method="post" enctype="multipart/form-data">
+    <input name="title" type="text">
+    <textarea name="content"></textarea>
+    <input type="file" name="file">
+    <button type="submit">등록</button> //등록을 누르면 폼으로 연결, 폼 액션 실행, 포스트방식으로 넘겨줌
+  </form>
+</div>
+</body>
+</html>
